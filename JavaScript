@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #0B0B0B;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .title {
+    font-size: 90px;
+    font-weight: 700;
+    color: #FFF;
+    background: linear-gradient(to right, #2D94FB, #E274FD);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .levelandpopularity {
+    margin-top: -65px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .level, .popularity {
+    font-weight: 400;
+    background: #202020;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin: 10px;
+    color: #FFF;
+    font-size: 20px;
+  }
+</style>
+</head>
+<body>
+  <h1 class="title">JavaScript</h1>
+  <div class="levelandpopularity">
+    <div class="level">Level: Beginner</div>
+    <div class="popularity">Popularity: #3</div>
+  </div>
+</body>
+</html>
