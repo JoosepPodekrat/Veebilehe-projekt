@@ -33,3 +33,21 @@ body {
     color: #FFF;
     font-size: 20px;
   }
+
+.navbar 
+{
+    margin-top: -65px;
+    display: flex;
+    justify-content: center;
+}
+
+.navitem
+{
+    font-weight: 400;
+    background: #202020;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin: 10px;
+    color: #FFF;
+    font-size: 20px;
+}
