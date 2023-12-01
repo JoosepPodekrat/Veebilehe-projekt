@@ -8,28 +8,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script>
+        function load(link)
+        {
+            var xhr= new XMLHttpRequest();
+            xhr.open("GET", link, true);
+            xhr.onreadystatechange= function() {
+                if (this.readyState!==4) return;
+                if (this.status!==200) return; // or whatever error handling you want
+                document.getElementById("content").innerHTML= this.responseText;
+                alert(this.responseText)
+            };          
+            xhr.send();
+        }
+        
+    </script>
 </head>
 <body>
 <div class="navbar">
     <div class="navitem">
-        <a href="Pages/Csharp.html" target="_self">C#</a>
+        <a onclick="load('Pages/Csharp.html')">C#</a>
     </div>
     <div class="navitem">
-        <a href="Pages/C++.html" target="_self">C++</a>
+        <a onclick="load('Pages/C++.html')">C++</a>
     </div>
     <div class="navitem">
-        <a href="Pages/JavaScript.html" target="_self">JavaScript</a>
-    </div>
-    <div class="navitem">
-        <a href="VPAssembly.html" target="_self">Home</a>
-    </div>
-    <div class="navitem">
-        <a href="VPAssembly.html" target="_self">Home</a>
-    </div>
-    <div class="navitem">
-        <a href="VPAssembly.html" target="_self">Home</a>
+        <a onclick="load('Pages/JavaScript.html')">JavaScript</a>
     </div>
 </div>
-    
-</body>
+<div id="content">
+</div>
 </html>

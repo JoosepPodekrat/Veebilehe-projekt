@@ -18,6 +18,11 @@ body {
     color: transparent;
   }
 
+  iframe{
+    height: fit-content;
+    overflow: visible;
+  }
+
   .levelandpopularity {
     margin-top: -65px;
     display: flex;
