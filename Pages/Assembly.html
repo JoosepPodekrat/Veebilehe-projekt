@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assembly</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="../Data/site.css">
+
+</head>
+<body>
+
+  <div class="start">
+    <h1 class="title">Assembly</h1>
+    <div class="levelandpopularity">
+      <div class="level">Level: 💀</div>
+      <div class="popularity">Popularity: #7</div>
+    </div>
+  </div>
+
+  <div class="overview">
+    <p><span class="white-text">Assembly is the lowest level coding language, one step above machine code.</span> Known for it’s high level of optimization and high degree of control over the computer. At it’s core, Assembly is binary code written in a format that humans can read. The assembler takes that abstraction and reverts it back in to the corresponding bit code.</p>
+    <p>Although most interpreted languages compile into assembly, writing code in assembly itself shines mostly in the creation of drivers, compilers and extremely light-weight programs. A majority of the world’s drivers and assemblers are written in Assembly.</p>
+    <p>Due to it’s nature as a package of multiple, processor-dependant languages, it’s used in virtually everything electronic. Although it’s primarily used in writing extremely low-level code, it can be used to to write fully working large systems. Some higher level as  When optimized for the hardware, it’s compatible with everything, from missile guidance chips to phone processors.</p>
+  </div>  
+
+  <!-- Content from the second file -->
+  <div class="container">
+    <div class="half-width">
+      <span class="white-text">Assembly Environments: From the internet to the Moon:</span> Assembly, traditionally a low level language has been modified to reach various environments.<br><br>
+      <span class="white-text">The Internet:  NASM</span> or Netwide Assembler is the assembler for easy networking between modems and routers. It has made writing code for essentially bare metal extremely easy.<br><br>
+      <span class="white-text">Space travel: HAL/S</span> or High-Order Assembly Language/Shuttle was an assembler written to be easily accessible to people unfamiliar with coding, such as astronauts.
+    </div>
+    <div class="half-width">
+      <span class="white-text">ARM and x86</span> make up the vast majority of consumer processor usage.<br><br>
+      <span class="white-text">x86</span> is the most commonly used language, that runs on Intel-based processors. It’s used extensively for device drivers, system programming and other low-level tasks.<br><br>
+      <span class="white-text">ARM</span> is the second most commonly used language, it runs on It’s used mostly for IoT devices, phones and routers. ARM is based on a Reduced Instruction Set.
+    </div>
+  </div>
+  <img class="examples" src="Data/AS_IMG/add.png" alt="Hello world"> <!-- https://carbon.now.sh/ -->
+  <div class="exampletext">
+    <p><span class="white-text">Explanation: </span>This Loads the value from Register 2, adds a literal number – 3 and stores it in Register 1.</p>
+  </div>  
+
+  <img class="examples" src="Data/AS_IMG/add2.png" alt="Hello world"> <!-- https://carbon.now.sh/ -->
+  <div class="exampletext">
+    <p><span class="white-text">Explanation: </span>This is the most basic arithmetic in Assembly. It Adds together the values in Registers 1 and 2, then stores it in Register 0.</p>
+  </div>
+
+  <img class="examples" src="Data/AS_IMG/rotate.png" alt="Hello world"> <!-- https://carbon.now.sh/ -->
+  <div class="exampletext">
+    <p><span class="white-text">Explanation: </span>The bits on the right side of the value will be removed and put back in the same order on the left side.</p>
+  </div> 
+
+  <img class="examples" src="Data/AS_IMG/lshiftr.png" alt="Hello world"> <!-- https://carbon.now.sh/ -->
+  <div class="exampletext">
+    <p><span class="white-text">Explanation: </span>This will add zeros to the left side of the value, pushing everything to the right.</p>
+  </div>  
+
+  <img class="examples" src="Data/AS_IMG/ashiftr.png" alt="Hello world"> <!-- https://carbon.now.sh/ -->
+  <div class="exampletext">
+    <p><span class="white-text">Explanation: </span>While in a logical shift the sign would get shifted along with the rest of the bits, losing that bit of information, an Arithmethic shift will keep it in place, while pushing everything else.</p>
+  </div>  
+
+  <img class="examples" src="Data/AS_IMG/slt.png" alt="Hello world"> <!-- https://carbon.now.sh/ -->
+  <div class="exampletext">
+    <p><span class="white-text">Explanation: </span>Tests if R2 is smaller than R3. If yes, R1 will be one, otherwise 0.</p>
+  </div>  
+
+</body>
+</html>
