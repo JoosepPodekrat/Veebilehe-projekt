@@ -51,10 +51,47 @@ body {
   height: 75vh; 
 }
 
+
 .title + .levelandpopularity { 
   flex-direction: row; 
   justify-content: center; 
   width: 100%; 
+}
+
+.index
+{
+  transition: all;
+  transition-duration: 1s;
+  transition-delay: 1s;
+  flex-direction: row; 
+  justify-content: center; 
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(to right, #2D94FB, #E274FD);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin: auto;
+  padding-right: 10px;
+}
+
+
+.index:hover
+{
+  transition: all;
+  transition-duration: 1s;
+  background: linear-gradient(to right, #E274FD, #2D94FB);
+  flex-direction: row; 
+  justify-content: center; 
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin: auto;
+  padding-right: 30px;
 }
 
 .title {

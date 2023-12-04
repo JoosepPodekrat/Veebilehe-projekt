@@ -10,24 +10,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
     <script>
+        //See script on sisu laadimiseks siia html-i peale teistest html lehekülgede pealt
+
+        //inspiratsioon võetud https://www.w3schools.com/xml/xml_http.asp
         function load(link)
         {
-            var xhr= new XMLHttpRequest();
-            xhr.open("GET", link, true);
-            xhr.onreadystatechange= function() {
-                if (this.readyState!==4) return;
-                if (this.status!==200) return; // or whatever error handling you want
-                document.getElementById("content").innerHTML= this.responseText;
-            };          
-            xhr.send();
+            //loome request objekti
+            var req= new XMLHttpRequest();
+            
+            //muudame req bulit-in funktsiooni kui readystate muutub.
+            req.onreadystatechange= function() {
+                if (this.readyState!==4) return; //Kui req ja response pole valmis siis viskab tagasi.
+                if (this.status!==200) return; // kui req staatus ei ole "OK" siis viskab tagasi
+                document.getElementById("content").innerHTML= this.responseText; // kui kõik ok siis pistab siia div elementi id-ga "content" saadud faili sisu
+            };
+            req.open("GET", link, true);        
+            req.send(); //saadab requesti
         }
         
     </script>
 </head>
 <body>
 <div class="navbar">
+    <h1 class="index" onclick="load('Pages/Landing.html')">Index</h1>
     <div class="navitem">
-        <a class = "nav-link" onclick="load('Pages/C++.html')">C#</a>
+        <a class = "nav-link" onclick="load('Pages/C++.html')">C++</a>
     </div>
     <div class="navitem">
         <a class = "nav-link" onclick="load('Pages/Assembly.html')">Assembly</a>
@@ -37,5 +44,15 @@
     </div>
 </div>
 <div id="content">
+    <div class="start">
+        <h1 class="title">Welcome!</h1>
+    </div>
+    <div class="overview">
+        <p><span class="white-text">Here</span> you will find short summaries of 3 programming languages.</p>
+        <p>Overviews, history, small facts, and short examples</p>
+    </div> 
+    <div class="full-width">
+        <span class="white-text">Created by: Joosep Podekrat, Kardo Märs, Madis-Julius Tamberg
+    </div>
 </div>
 </html>
