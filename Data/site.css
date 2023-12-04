@@ -46,7 +46,8 @@ body {
   display: flex;
   flex-direction: column; 
   justify-content: center; 
-  align-items: center; 
+  align-items: center;
+  margin: auto;
   height: 75vh; 
 }
 
@@ -93,6 +94,7 @@ body {
   font-size: 30px;
   max-width: 1000px; 
   font-weight: 400;
+  margin: auto;
 }
 
 .exampletext {
@@ -101,6 +103,7 @@ body {
   font-size: 30px;
   max-width: 1000px; 
   font-weight: 400;
+  margin: auto;
 }
 
 .examples {
